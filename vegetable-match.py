@@ -1,6 +1,8 @@
 # Veggie list provided courtesy of https://copypastelist.com/food/list/list-of-vegetables
 
-vegetable_list = ["carrot", "broccoli", "spinach", "lettuce", "cucumber", "tomato", "pepper", "onion", "garlic", "potato", "celery", "cauliflower", "asparagus", "brussels sprouts", "kale", "swiss chard"]
+with open("./vegetable_list.txt", "r", encoding="utf-8") as f:
+    vegetable_list = [line.strip() for line in f.readlines()]
+
 vegetable = input("Enter a vegetable: ")
 match vegetable:
     case _ if vegetable in vegetable_list:
