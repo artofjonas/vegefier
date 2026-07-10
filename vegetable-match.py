@@ -1,5 +1,5 @@
 # Veggie list provided courtesy of https://copypastelist.com/food/list/list-of-vegetables
-# to do: add some sort of try-except loop to handle bogus input
+# to do: add a try-except FileNotFoundError in the event that the vegetable_list.txt file is not found or badly formatted
 
 # Open and parse vegetable list
 with open("./vegetable_list.txt", "r", encoding="utf-8") as f:
